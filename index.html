@@ -56,12 +56,24 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                                   <td style="padding:20px;width:25%;vertical-align:middle">
+             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id="malle_image">
-                <img src='images/Fig3.jpg' width="160">
+                <img src='images/Fig3.jpg' width="160">               
                                 </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
                 </td>     
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:left">
                <span class="highlight">
               <a href="https://doi.org/10.1111/ddi.13493">
                 <papertitle>Climate-induced plasticity in leaf traits of riparian plants</papertitle>
@@ -93,7 +105,7 @@
                 malle_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:left">
               <a href="https://doi.org/10.1111/gcb.15931">
                 <papertitle>Elevated temperature may reduce functional but not taxonomic diversity of fungal assemblages on decomposing leaf litter in streams</papertitle>
               </a>
@@ -164,7 +176,7 @@
                 malle_stop()
               </script>
             </td>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://doi.org/10.1002/lno.11745">
                 <papertitle>Strategies of shredders when feeding on low-quality leaf-litter: Local population adaptations or fixed species traits?</papertitle>
               </a>
