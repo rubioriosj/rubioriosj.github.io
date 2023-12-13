@@ -50,8 +50,6 @@
           </tr>
         </tbody></table>
 
-        <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,40 +99,8 @@
 <body>
 
 <div id="menu">
-    <div class="menu-item" onclick="toggleSubMenu('sub1')">Opción 1</div>
-    <div class="submenu" id="sub1">
-        <a href="#">Subopción 1.1</a>
-        <a href="#">Subopción 1.2</a>
-        <a href="#">Subopción 1.3</a>
-    </div>
-
-    <div class="menu-item" onclick="toggleSubMenu('sub2')">Opción 2</div>
-    <div class="submenu" id="sub2">
-        <a href="#">Subopción 2.1</a>
-        <a href="#">Subopción 2.2</a>
-        <a href="#">Subopción 2.3</a>
-    </div>
-
-    <!-- Agrega más opciones y subopciones según sea necesario -->
-
-</div>
-
-<script>
-    function toggleSubMenu(submenuId) {
-        var submenu = document.getElementById(submenuId);
-        if (submenu.style.display === "none" || submenu.style.display === "") {
-            submenu.style.display = "block";
-        } else {
-            submenu.style.display = "none";
-        }
-    }
-</script>
-
-</body>
-</html>
-
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <div class="menu-item" onclick="toggleSubMenu('sub1')"> Publications</div>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading> 
@@ -513,6 +479,35 @@ of interregional variability of leaf microbial decomposition and cellulolytic ac
               </td>
           </tr>
            </tbody></table>
+    </div>
+
+    <div class="menu-item" onclick="toggleSubMenu('sub2')">Teaching material</div>
+    <div class="submenu" id="sub2">
+        <a href="#">Subopción 2.1</a>
+        <a href="#">Subopción 2.2</a>
+        <a href="#">Subopción 2.3</a>
+    </div>
+
+    <!-- Agrega más opciones y subopciones según sea necesario -->
+
+</div>
+
+<script>
+    function toggleSubMenu(submenuId) {
+        var submenu = document.getElementById(submenuId);
+        if (submenu.style.display === "none" || submenu.style.display === "") {
+            submenu.style.display = "block";
+        } else {
+            submenu.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+        
+      
             
            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
